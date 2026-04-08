@@ -1,0 +1,18 @@
+# Next.js
+app/.next/
+app/out/
+app/.env.local
+app/.env.development.local
+app/.env.test.local
+app/.env.production.local
+
+# Importer
+importer/.env
+importer/logs/
+importer/node_modules/
+
+# Root
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
