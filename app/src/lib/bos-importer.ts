@@ -10,8 +10,7 @@ async function createMcpClient(): Promise<Client> {
 
   const transport = new SSEClientTransport(new URL(url));
   const client = new Client(
-    { name: 'bos-kpi-importer-vercel', version: '1.0.0' },
-    { capabilities: { tools: {} } }
+    { name: 'bos-kpi-importer-vercel', version: '1.0.0' }
   );
   await client.connect(transport);
   return client;
