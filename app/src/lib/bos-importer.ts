@@ -114,7 +114,7 @@ export async function runImport(): Promise<{ imported: number; errors: number }>
 
   if (successful.length > 0) {
     const supabase = createClient(
-      process.env.SUPABASE_URL!,
+      (process.env.SUPABASE_URL ?? process.env.NEXT_PUBLIC_SUPABASE_URL)!,
       process.env.SUPABASE_SERVICE_ROLE_KEY!
     );
     const importedAt = new Date().toISOString();
